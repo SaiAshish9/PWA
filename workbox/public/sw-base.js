@@ -15,6 +15,7 @@ workboxSW.router.registerRoute(/.*(?:googleapis|gstatic)\.com.*$/, workboxSW.str
   }
 }));
 
+// dynamic caching
 workboxSW.router.registerRoute('https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.indigo-pink.min.css', workboxSW.strategies.staleWhileRevalidate({
   cacheName: 'material-css'
 }));
